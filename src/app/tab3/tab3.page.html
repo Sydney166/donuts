@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      M Y - O R D E R
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,6 +12,38 @@
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
   </ion-header>
+  <h2>One More Step!</h2>
+  <h4> Enter your information:</h4>
+  <ion-list>
+    <ion-item>
+      <ion-label>Enter Name:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Enter Address:</ion-label>
+      <ion-input placeholder="Enter company name"></ion-input>
+    </ion-item>
+  
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-item>
+    <ion-label>Enter Email:</ion-label>
+    <ion-input type="email" placeholder="email@domain.com"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Enter Phone Number:</ion-label>
+    <ion-input type="tel" placeholder="888-888-8888"></ion-input>
+  </ion-item>
+</ion-list>
+ 
+<h2>S U B M I T- O R D E R</h2>
+
+<ion-button id="click-trigger">Submit</ion-button>
+<ion-popover trigger="click-trigger" triggerAction="click">
+  <ng-template>
+    <ion-content class="ion-padding">order sent!</ion-content>
+  </ng-template>
+</ion-popover>
+
 </ion-content>
